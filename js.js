@@ -98,11 +98,11 @@ class ProductManager{
 
 // Código adicional utilizado para testear la clase
 
-let manag = new ProductManager("./productos.txt");
-console.log(manag.getProducts());
+//let manag = new ProductManager("./productos.txt");
+//console.log(manag.getProducts());
 //manag.addProduct({title: "Pelapapas", description: "Pelapapas metalico de gran calidad", price: 255, thumbnail: "\ff\fdsd.jpg", code: "CD31", stock:34})
 //console.log(manag.getProducts());
-manag.addProduct({title: "Cucharita", description: "Cucharita de cafe de calidad mejorable", price: 500, thumbnail: "\gg\gg.jpg", code: "CD31", stock:11})
+//manag.addProduct({title: "Cucharita", description: "Cucharita de cafe de calidad mejorable", price: 500, thumbnail: "\gg\gg.jpg", code: "CD31", stock:11})
 //console.log(manag.getProducts());
 //console.log(manag.getProductById(1))
 //manag.updateProduct(1,{title: "Tenedor", description: "Descripcion modificada", price: 111, thumbnail: "d.jpg", code: "1", stock:1})
