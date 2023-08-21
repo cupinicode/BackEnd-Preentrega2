@@ -70,6 +70,10 @@ class ProductManager{
             console.log("Not found"); // ... muestro el error por consola
             return "" // salgo del método, retornando CADENA VACIA (no está indicado en la consigna, pero entiendo que TODA función debe retornar un valor)
         }
+        if (this.products.find((prod) => prod.code === nuevoDato.code)) { //COntrolo que el CODE no exista en los objetos ya ingresados
+            console.log(`Modificación errónea. El código ${producto.code} ya existe.  Se descartará la modificación`)
+            return
+        }
         this.products[encontrado].title = nuevoDato.title                //Modifico el objeto corespondiente
         this.products[encontrado].description = nuevoDato.description    //con los nuevos datos
         this.products[encontrado].price = nuevoDato.price
